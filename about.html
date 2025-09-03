@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">SNIKERS STOR</a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="basket">
+                    🛒
+                    <img src="./avatar.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+
+        <section id="faq">
+            <h2>Najczęściej zadawane pytania (FAQ)</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">Jakie są opcje dostawy? <span class="arrow">▼</span> </button>
+                
+                <div class="faq-answer">
+                    <p>Oferujemy dostawę kurierem, do paczkomatów oraz odbiór osobisty. Czas dostawy to zazwyczaj 1–3
+                        dni robocze.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Czy mogę zwrócić buty? <span class="arrow">▼</span></button>
+                <div class="faq-answer">
+                    <p>Tak, masz 14 dni na zwrot towaru bez podania przyczyny. Buty muszą być nienoszone i w oryginalnym
+                        opakowaniu.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Jak dobrać odpowiedni rozmiar? <span class="arrow">▼</span> </button>
+                <div class="faq-answer">
+                    <p>Na stronie każdego produktu znajdziesz tabelę rozmiarów. Jeśli masz wątpliwości, skontaktuj się z
+                        nami – pomożemy!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="kontakt">
+            <h2>Skontaktuj się z nami</h2>
+            <form>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="6" required
+                    style="width: 100%; margin-bottom: 10px;"></textarea>
+
+                <button type="submit" style="padding: 10px 20px;">Wyślij</button>
+            </form>
+        </section>
+
+
+
+
+
+    </div>
+
+    <script>
+  const faqButtons = document.querySelectorAll(".faq-question");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
+      const arrow = button.querySelector(".arrow");
+
+      const isOpen = answer.style.maxHeight;
+
+      answer.style.maxHeight = isOpen ? null : answer.scrollHeight + "px";
+      arrow.textContent = isOpen ? "▼" : "▲";
+    });
+  });
+</script>
+
+
+
+
+</body>
+
+</html>

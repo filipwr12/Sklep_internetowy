@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 25px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.links ul {
+    display: flex;
+    gap: 25px;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li:hover {
+    color: #ff6a00;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+nav img:hover {
+    transform: scale(1.05);
+}
+
+#kontakt {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+#kontakt h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+#kontakt form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#kontakt label {
+  font-weight: bold;
+}
+
+#kontakt input,
+#kontakt textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#kontakt textarea {
+  resize: vertical;
+}
+
+#kontakt button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#faq {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: #e0e0e0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+.faq-answer p {
+  padding: 10px 0;
+  margin: 0;
+}
