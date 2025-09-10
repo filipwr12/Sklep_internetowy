@@ -1,89 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 body {
-    background-color: #f9f9f9;
-    color: #333;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
-    background-color: #fff;
-    padding: 25px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    margin-top: 20px;
-    border-radius: 10px;
+  background-color: #fff;
+  padding: 25px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo a {
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #222;
-    letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  letter-spacing: 1px;
 }
 
 .links ul {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
 
 .links ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .links ul li:hover {
-    color: #ff6a00;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  color: #ff6a00;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 nav a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.8rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
 }
 
 .basket {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 1.5rem;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 nav img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
 }
 
 nav img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #kontakt {
@@ -180,4 +180,227 @@ nav img:hover {
 .faq-answer p {
   padding: 10px 0;
   margin: 0;
+}
+
+
+.company {
+  background-color: #fff3e6;
+  border: 2px solid #ffa94d;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(255, 149, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.company h1 {
+  color: #ff7300;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ffa94d;
+  padding-bottom: 10px;
+}
+
+.company-text p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+}
+
+
+.cart {
+  background-color: #fff3e6;
+  border: 2px solid #ffa94d;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(255, 149, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart h1 {
+  color: #ff7300;;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff9e3d;
+  padding-bottom: 10px;
+}
+
+.cart-text p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+}
+
+.company-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+
+
+.portfolio h2 {
+  font-size: 3.8em;
+  text-align: center;
+  color: #000;
+  margin-bottom: 1.5em;
+}
+
+.portfolio h2 span {
+  color: #ff6600;
+}
+
+.portfolio .portfolio-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box {
+  position: relative;
+  width: 375px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info h4 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 10px 15px 15px;
+  color: #fff;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 7em;
+  height: 4em;
+  background: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info a i {
+  font-size: 1em;
+  color: #000;
+}
+
+.portfolio .portfolio-wrapper .portfolio-box:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+
+.opinie-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.opinia{
+  max-width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.opinia-img-wrapper{
+  border:2px solid #ff6a00;
+  border-radius: 50%;
+}
+
+.opinia-img-wrapper img{
+ max-width: 100px;
+  border-radius: 50%;
+  max-height: 100px;
+}
+
+.opinie h2#head{
+  text-align: center;
+  font-size: 3.8rem;
+  margin: 3rem 0;
+}
+
+.opinie h2#head span{
+  color: #ff6600;
+}
+
+.opinie{
+  margin:  3rem 0;
+}
+
+.opinie p{
+  min-height: 180px;
+}
+.opinia h1{
+  margin: 20px 0;
+}
+
+@media (max-width:1050px) {
+    nav{
+      flex-direction: column;
+      display: flex;
+    }
+
+    nav  .links ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .basket{
+      display: none;
+    }
+    .logo{
+      margin-bottom: 15px;
+    }
 }
