@@ -85,52 +85,65 @@ nav img {
 nav img:hover {
     transform: scale(1.05);
 }
-main{
-display: flex;
-width: 100%;
-margin: 100px 0;
-}
-.main-left{
-    width: 50%;
-}
-.main-right{
-    width: 50%;
-}
-.img-wrapper{
+
+main {
+    display: flex;
     width: 100%;
-    height: 500px;
+    margin: 100px 0;
+}
+
+.main-left {
+    width: 50%;
+}
+
+.main-right {
+    width: 50%;
+}
+
+.img-wrapper {
     display: flex;
     justify-content: center;
 }
-.img-wrapper img{
-    border-radius: 20px;
-    width: 80%;
+
+.img-wrapper img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 2px;
 }
-.main-right h3, h1,  p{
-margin: 20px 0;
+
+.main-right h3,
+h1,
+p {
+    margin: 35px 0;
 }
-.select-images{
+
+.select-images {
     display: flex;
     justify-content: center;
 }
-.select-images img{
-width: 15%;
-border-radius: 10px;
-margin: 23px;
+
+.select-images img {
+    width: 15%;
+    border-radius: 10px;
+    margin: 23px;
 }
-.select-images img:hover{
+
+.select-images img:hover {
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
 }
+
 .price {
     display: flex;
     align-items: center;
 }
-.price p  button{
+
+.price p button {
     margin: 0 20px;
 }
-.price button{
+
+.price button {
     background-color: black;
     width: 60px;
     height: 30px;
@@ -138,24 +151,32 @@ margin: 23px;
     border-radius: 10px;
     border: none;
 }
+
 .old-price p {
-text-decoration: line-through;
+    text-decoration: line-through;
 }
-.add-to-cart{
+
+.add-to-cart {
     display: flex;
     align-items: center;
 }
-#count{
+
+#count {
     width: 150px;
     height: 50px;
     border-radius: 10px;
     border: none;
     font-weight: bold;
+    font-size: 20px;
 }
-span{
+
+span {
     color: #ff6a00;
+    margin: 10px;
+    cursor: pointer;
 }
-#add{
+
+#add {
     width: 260px;
     height: 50px;
     background-color: #ff6a00;
@@ -165,16 +186,36 @@ span{
     font-weight: bold;
     margin: 0 20px;
 }
-@media (max-width:780px){
-    main{
+#add:hover{
+    cursor: pointer;
+    background-color: #ff9448;
+    transition: ease-in-out 0.5s;
+    color: white;
+}
+#shoes1{
+    display: none;
+}
+#shoes2{
+    display: none;
+}
+#shoes3{
+    display: none;
+}
+#shoes4{
+    display: none;
+}
+@media (max-width:780px) {
+    main {
         display: flex;
         flex-direction: column;
     }
-    .main-right{
+
+    .main-right {
         width: 100%;
-      
+
     }
-    .main-left{
+
+    .main-left {
         width: 100%;
     }
 }
