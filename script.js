@@ -10,8 +10,32 @@ increment.onclick = function(){
 }
 decrement.onclick = function(){
     count--;
+    if (count < 0) {
+        count = 0;
+    }
     number.textContent = count;
 }
+
+const add = document.getElementById("add");
+
+
+
+add.onclick = function() {
+    if( count == 0) {
+        alert("nic nie zaznaczyles")
+    }
+    else{
+    var x = document.getElementById("shoe-size");
+    var value = x.value;
+    alert("Liczba par butów dodanych do koszyka: " + count + " w rozmiarze:" + value)
+    count = 0;
+    number.textContent = count;
+    }
+    
+
+}
+
+
 
 const MainImg = document.getElementById("MainImg");
 
@@ -35,13 +59,22 @@ shoe1.onclick = function(){
 }
 shoe2.onclick = function(){
     shoes1.style.display = "none";
+    MainImg.style.display="none";
+    shoes3.style.display="none";
+    shoes4.style.display="none";
     shoes2.style.display = "flex";
 }
 shoe3.onclick = function(){
+     shoes1.style.display = "none";
+    MainImg.style.display="none";
     shoes2.style.display = "none";
+    shoes4.style.display="none";
     shoes3.style.display = "flex";
 }
 shoe4.onclick = function(){
+    shoes2.style.display = "none";
+    shoes1.style.display = "none";
+    MainImg.style.display="none";
     shoes3.style.display = "none";
     shoes4.style.display = "flex";
 }
