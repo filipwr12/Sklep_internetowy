@@ -404,3 +404,116 @@ nav img:hover {
       margin-bottom: 15px;
     }
 }
+
+footer{
+    width: 100%;
+    background-color:#fff ;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+     display: flex;
+     border-radius: 20px;
+}
+.footer-left{
+    width: 33%;
+    margin: 40px;
+}
+.footer-mid{
+    width: 33%;
+}
+.footer-right{
+    width: 33%;
+     display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.input-wrapper{
+    display: flex;
+}
+.input-wrapper input{
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+}
+.input-wrapper button{
+    width: 100px;
+    height: 50px;
+    background-color: #ff6a00;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.input-wrapper button:hover{
+    background-color: #ff9448;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.footer-mid h3{
+    margin: 1px 0;
+    cursor: pointer;
+}
+.color-footer{
+    color: rgb(131, 131, 131);
+}
+.color-footer h3{
+    margin: 5px 0;
+}
+
+
+@media (max-width:780px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #shoe-size{
+        width:420px;
+        height: 40px;
+    }
+    .main-left {
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left p{
+      max-width: 70%;
+      font-size: 1rem;
+      margin: 20px 0;
+    }
+    .footer-left input{
+        width: 100%;
+    }
+    .footer-mid{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    .footer-right{
+        width: 100%;
+          display: flex;
+        align-items: center;
+             font-size: 20px;
+    }
+}
